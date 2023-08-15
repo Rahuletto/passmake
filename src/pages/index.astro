@@ -28,6 +28,7 @@ import Layout from "../layouts/Layout.astro";
         placeholder="32"
       />
     </div>
+	<a href="https://github.com/Rahuletto/Password-Generator" id="github" target="_blank" rel="noopener">Source Code</a>
   </main>
 </Layout>
 
@@ -156,6 +157,7 @@ import Layout from "../layouts/Layout.astro";
     animation-duration: 0.2s;
     animation-name: fade;
     animation-fill-mode: forwards;
+	transition: 0.3s cubic-bezier(0.51, 0.69, 0.46, 0.96);
 
     cursor: pointer;
     position: relative;
@@ -166,7 +168,7 @@ import Layout from "../layouts/Layout.astro";
     margin-bottom: -56px;
     padding: 4px 8px;
     border-radius: 6px;
-    color: white;
+    color: rgb(187, 187, 187);
     font-family: "DM Sans";
   }
 
@@ -176,7 +178,28 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .clicked-copy {
+	
     border: 1px solid rgb(0, 136, 0) !important;
+  }
+
+  #github {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 8px 16px;
+	border: 1px solid #292929;
+    background: #171818;
+	text-decoration: none;
+	font-family: "JetBrains Mono";
+	transition: 0.3s cubic-bezier(0.51, 0.69, 0.46, 0.96);
+	border-radius: 14px;
+	color: rgb(187, 187, 187);
+	opacity: 0.7;
+  }
+
+  #github:hover{
+	opacity: 1;
+	transform: scale(0.95);
   }
 
   @keyframes fade {
